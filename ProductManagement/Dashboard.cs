@@ -1,5 +1,6 @@
 ﻿
 using MaterialSkin.Controls;
+using ProductManagement.Package.Utils;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -22,8 +23,7 @@ namespace ProductManagement
         public Dashboard()
         {
             InitializeComponent();
-
-           
+            menuStripDashboard.Renderer = new MenuStripRenderer();
         }
 
         private void panelTopContainerDashboard_MouseMove(object sender, MouseEventArgs e)
