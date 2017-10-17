@@ -39,6 +39,9 @@
       <HintPath>..\packages\MaterialSkin.0.2.1\lib\MaterialSkin.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="SimpleValidator, Version=0.6.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SimpleValidator.0.6.1.0\lib\net40\SimpleValidator.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Management" />
@@ -53,6 +56,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Package\Dao\ProviderDAO.cs" />
+    <Compile Include="Package\Domain\Product.cs" />
+    <Compile Include="Package\Domain\Provider.cs" />
+    <Compile Include="Package\Interfaces\IAbstractDao.cs" />
+    <Compile Include="Package\Utils\Connection.cs" />
     <Compile Include="Package\Utils\MenuStripRenderer.cs" />
     <Compile Include="Package\Utils\UtilsColor.cs" />
     <Compile Include="Dashboard.cs">
@@ -61,15 +69,33 @@
     <Compile Include="Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="Product.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Product.Designer.cs">
+      <DependentUpon>Product.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Provider.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Provider.Designer.cs">
+      <DependentUpon>Provider.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Product.resx">
+      <DependentUpon>Product.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Provider.resx">
+      <DependentUpon>Provider.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -125,6 +151,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\ic_exit1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_search_color.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

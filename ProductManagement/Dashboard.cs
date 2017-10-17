@@ -1,4 +1,5 @@
 ﻿
+using MaterialSkin;
 using MaterialSkin.Controls;
 using ProductManagement.Package.Utils;
 using System;
@@ -70,6 +71,20 @@ namespace ProductManagement
         private void dashboardButtonMinimized_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void productProviderToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Provider form = new Provider();
+            form.MdiParent = this;
+            form.Show();
+        }
+
+        private void produtosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Product form = new Product();
+            form.MdiParent = this;
+            form.Show();
         }
     }
 }
