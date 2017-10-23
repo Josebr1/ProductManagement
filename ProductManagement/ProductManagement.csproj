@@ -59,6 +59,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Package\Dao\ProductDAO.cs" />
     <Compile Include="Package\Dao\ProviderDAO.cs" />
     <Compile Include="Package\Domain\Product.cs" />
     <Compile Include="Package\Domain\Provider.cs" />
@@ -78,6 +79,7 @@
     <Compile Include="FrmProduct.Designer.cs">
       <DependentUpon>FrmProduct.cs</DependentUpon>
     </Compile>
+    <Compile Include="Package\Validators\ProductValidador.cs" />
     <Compile Include="Package\Validators\ProviderValidador.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

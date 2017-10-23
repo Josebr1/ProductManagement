@@ -6,16 +6,13 @@ using System.Threading.Tasks;
 
 namespace ProductManagement.Package.Domain
 {
-
-   
-
     class Product
     {
-
-        private string codProduct { get; set; }
-        private string description { get; set; }
-        private long stockQuantity { get; set; }
-        private string characteristics { get; set; }
-        private long codProvider { get; set; }
+        public Int64 CodProduct { get; set; }
+        public string Description { get; set; }
+        public string Unit { get; set; }
+        public long StockQuantity { get; set; }
+        public string Characteristics { get; set; }
+        public Int64 CodProvider { get; set; }
     }
 }
