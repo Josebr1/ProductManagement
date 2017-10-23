@@ -9,7 +9,8 @@ namespace ProductManagement.Package.Utils
 {
     class Connection
     {
-        private static string connString = @"Provider=Microsoft.Ace.OLEDB.12.0;Data Source=Bd_EMPRESA.accdb";
+        private static string connString = @"Provider=Microsoft.Ace.OLEDB.12.0;Data Source=BD_EMPRESA.accdb";
+     
         private static OleDbConnection connection = null;
 
         public static OleDbConnection getConnection()
@@ -23,7 +24,7 @@ namespace ProductManagement.Package.Utils
             catch (Exception ex)
             {
                 connection = null;
-                System.Windows.Forms.MessageBox.Show("Conexão não estabelecida!!" + ex.GetBaseException());
+                System.Windows.Forms.MessageBox.Show("Conexão não estabelecida!!" + ex.GetBaseException() + ex.GetHashCode());
             }
             return connection;
         }

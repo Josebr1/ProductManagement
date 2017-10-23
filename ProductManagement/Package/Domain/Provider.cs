@@ -8,15 +8,19 @@ namespace ProductManagement.Package.Domain
 {
     class Provider
     {
-        private long codProvider { get; set; }
-        private string socialName { get; set; }
-        private string cnpj { get; set; }
-        private string address { get; set; }
-        private string number { get; set; }
-        private string neighborhood { get; set; }
-        private string city { get; set; }
-        private string phone { get; set; }
-        private string nameContact { get; set; }
-        private string email { get; set; }
+        public Int64 CodProvider { get; set; }
+        public string SocialName { get; set; }
+        public string FantasyName { get; set; }
+        public string CNPJ { get; set; }
+        public string Address { get; set; }
+        public string Number { get; set; }
+        public string Neighborhood { get; set; }
+        public string City { get; set; }
+        public string Phone { get; set; }
+        public string NameContact { get; set; }
+        public string Email { get; set; }
+        public string Site { get; set; }
+
+
     }
 }

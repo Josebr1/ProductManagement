@@ -1,6 +1,6 @@
 ﻿namespace ProductManagement
 {
-    partial class Product
+    partial class FrmProduct
     {
         /// <summary>
         /// Required designer variable.
@@ -28,11 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Product));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmProduct));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             this.bunifuCards1 = new Bunifu.Framework.UI.BunifuCards();
+            this.buttonDeleteProduct = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.buttonEditProduct = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.buttonInsertProduct = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.textCharacteristics = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.textDescription = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.lblProvider = new MaterialSkin.Controls.MaterialLabel();
             this.dropdownProvider = new Bunifu.Framework.UI.BunifuDropdown();
             this.lblCharacteristics = new MaterialSkin.Controls.MaterialLabel();
@@ -41,17 +46,12 @@
             this.dropdownUnit = new Bunifu.Framework.UI.BunifuDropdown();
             this.lblUnit = new MaterialSkin.Controls.MaterialLabel();
             this.lblDescription = new MaterialSkin.Controls.MaterialLabel();
-            this.textDescription = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.textCharacteristics = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.bunifuCustomDataGrid1 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
+            this.productGridView = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.buttonDeleteProduct = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.buttonEditProduct = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.buttonInsertProduct = new Bunifu.Framework.UI.BunifuThinButton2();
             this.textSearchProduct = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.bunifuCards1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericStockQuantity)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -59,12 +59,12 @@
             // 
             this.materialLabel1.AutoSize = true;
             this.materialLabel1.Depth = 0;
-            this.materialLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.materialLabel1.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialLabel1.Location = new System.Drawing.Point(28, 105);
             this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel1.Name = "materialLabel1";
-            this.materialLabel1.Size = new System.Drawing.Size(167, 18);
+            this.materialLabel1.Size = new System.Drawing.Size(171, 19);
             this.materialLabel1.TabIndex = 13;
             this.materialLabel1.Text = "Informações do produto";
             // 
@@ -94,184 +94,6 @@
             this.bunifuCards1.ShadowDepth = 20;
             this.bunifuCards1.Size = new System.Drawing.Size(507, 469);
             this.bunifuCards1.TabIndex = 14;
-            // 
-            // lblProvider
-            // 
-            this.lblProvider.AutoSize = true;
-            this.lblProvider.Depth = 0;
-            this.lblProvider.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.lblProvider.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblProvider.Location = new System.Drawing.Point(13, 293);
-            this.lblProvider.MouseState = MaterialSkin.MouseState.HOVER;
-            this.lblProvider.Name = "lblProvider";
-            this.lblProvider.Size = new System.Drawing.Size(85, 18);
-            this.lblProvider.TabIndex = 23;
-            this.lblProvider.Text = "Fornecedor";
-            // 
-            // dropdownProvider
-            // 
-            this.dropdownProvider.BackColor = System.Drawing.Color.Transparent;
-            this.dropdownProvider.BorderRadius = 3;
-            this.dropdownProvider.DisabledColor = System.Drawing.Color.Gray;
-            this.dropdownProvider.ForeColor = System.Drawing.Color.White;
-            this.dropdownProvider.Items = new string[0];
-            this.dropdownProvider.Location = new System.Drawing.Point(17, 315);
-            this.dropdownProvider.Name = "dropdownProvider";
-            this.dropdownProvider.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.dropdownProvider.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.dropdownProvider.selectedIndex = -1;
-            this.dropdownProvider.Size = new System.Drawing.Size(473, 35);
-            this.dropdownProvider.TabIndex = 6;
-            // 
-            // lblCharacteristics
-            // 
-            this.lblCharacteristics.AutoSize = true;
-            this.lblCharacteristics.Depth = 0;
-            this.lblCharacteristics.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.lblCharacteristics.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblCharacteristics.Location = new System.Drawing.Point(13, 221);
-            this.lblCharacteristics.MouseState = MaterialSkin.MouseState.HOVER;
-            this.lblCharacteristics.Name = "lblCharacteristics";
-            this.lblCharacteristics.Size = new System.Drawing.Size(111, 18);
-            this.lblCharacteristics.TabIndex = 21;
-            this.lblCharacteristics.Text = "Características ";
-            // 
-            // numericStockQuantity
-            // 
-            this.numericStockQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericStockQuantity.Location = new System.Drawing.Point(17, 188);
-            this.numericStockQuantity.Name = "numericStockQuantity";
-            this.numericStockQuantity.Size = new System.Drawing.Size(217, 26);
-            this.numericStockQuantity.TabIndex = 4;
-            // 
-            // lblStockQuantity
-            // 
-            this.lblStockQuantity.AutoSize = true;
-            this.lblStockQuantity.Depth = 0;
-            this.lblStockQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.lblStockQuantity.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblStockQuantity.Location = new System.Drawing.Point(13, 166);
-            this.lblStockQuantity.MouseState = MaterialSkin.MouseState.HOVER;
-            this.lblStockQuantity.Name = "lblStockQuantity";
-            this.lblStockQuantity.Size = new System.Drawing.Size(165, 18);
-            this.lblStockQuantity.TabIndex = 18;
-            this.lblStockQuantity.Text = "Quantidade no estoque ";
-            // 
-            // dropdownUnit
-            // 
-            this.dropdownUnit.BackColor = System.Drawing.Color.Transparent;
-            this.dropdownUnit.BorderRadius = 3;
-            this.dropdownUnit.DisabledColor = System.Drawing.Color.Gray;
-            this.dropdownUnit.ForeColor = System.Drawing.Color.White;
-            this.dropdownUnit.Items = new string[] {
-        "Unidade",
-        "Caixa",
-        "Dezena",
-        "Pacote"};
-            this.dropdownUnit.Location = new System.Drawing.Point(17, 115);
-            this.dropdownUnit.Name = "dropdownUnit";
-            this.dropdownUnit.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.dropdownUnit.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.dropdownUnit.selectedIndex = 1;
-            this.dropdownUnit.Size = new System.Drawing.Size(217, 34);
-            this.dropdownUnit.TabIndex = 3;
-            // 
-            // lblUnit
-            // 
-            this.lblUnit.AutoSize = true;
-            this.lblUnit.Depth = 0;
-            this.lblUnit.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.lblUnit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblUnit.Location = new System.Drawing.Point(13, 93);
-            this.lblUnit.MouseState = MaterialSkin.MouseState.HOVER;
-            this.lblUnit.Name = "lblUnit";
-            this.lblUnit.Size = new System.Drawing.Size(62, 18);
-            this.lblUnit.TabIndex = 16;
-            this.lblUnit.Text = "Unidade";
-            // 
-            // lblDescription
-            // 
-            this.lblDescription.AutoSize = true;
-            this.lblDescription.Depth = 0;
-            this.lblDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.lblDescription.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblDescription.Location = new System.Drawing.Point(13, 23);
-            this.lblDescription.MouseState = MaterialSkin.MouseState.HOVER;
-            this.lblDescription.Name = "lblDescription";
-            this.lblDescription.Size = new System.Drawing.Size(76, 18);
-            this.lblDescription.TabIndex = 15;
-            this.lblDescription.Text = "Descrição";
-            // 
-            // textDescription
-            // 
-            this.textDescription.BorderColorFocused = System.Drawing.Color.SeaGreen;
-            this.textDescription.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.textDescription.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
-            this.textDescription.BorderThickness = 1;
-            this.textDescription.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.textDescription.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.textDescription.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.textDescription.isPassword = false;
-            this.textDescription.Location = new System.Drawing.Point(17, 46);
-            this.textDescription.Margin = new System.Windows.Forms.Padding(4);
-            this.textDescription.Name = "textDescription";
-            this.textDescription.Size = new System.Drawing.Size(473, 30);
-            this.textDescription.TabIndex = 2;
-            this.textDescription.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // textCharacteristics
-            // 
-            this.textCharacteristics.BorderColorFocused = System.Drawing.Color.SeaGreen;
-            this.textCharacteristics.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.textCharacteristics.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
-            this.textCharacteristics.BorderThickness = 1;
-            this.textCharacteristics.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.textCharacteristics.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.textCharacteristics.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.textCharacteristics.isPassword = false;
-            this.textCharacteristics.Location = new System.Drawing.Point(17, 245);
-            this.textCharacteristics.Margin = new System.Windows.Forms.Padding(4);
-            this.textCharacteristics.Name = "textCharacteristics";
-            this.textCharacteristics.Size = new System.Drawing.Size(473, 34);
-            this.textCharacteristics.TabIndex = 5;
-            this.textCharacteristics.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // bunifuCustomDataGrid1
-            // 
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.bunifuCustomDataGrid1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
-            this.bunifuCustomDataGrid1.BackgroundColor = System.Drawing.Color.Gainsboro;
-            this.bunifuCustomDataGrid1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.bunifuCustomDataGrid1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.bunifuCustomDataGrid1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
-            this.bunifuCustomDataGrid1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.bunifuCustomDataGrid1.DoubleBuffered = true;
-            this.bunifuCustomDataGrid1.EnableHeadersVisualStyles = false;
-            this.bunifuCustomDataGrid1.HeaderBgColor = System.Drawing.Color.SeaGreen;
-            this.bunifuCustomDataGrid1.HeaderForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuCustomDataGrid1.Location = new System.Drawing.Point(538, 199);
-            this.bunifuCustomDataGrid1.Name = "bunifuCustomDataGrid1";
-            this.bunifuCustomDataGrid1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.bunifuCustomDataGrid1.Size = new System.Drawing.Size(486, 397);
-            this.bunifuCustomDataGrid1.TabIndex = 15;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = global::ProductManagement.Properties.Resources.ic_search_color;
-            this.pictureBox1.Location = new System.Drawing.Point(975, 134);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(48, 48);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox1.TabIndex = 16;
-            this.pictureBox1.TabStop = false;
             // 
             // buttonDeleteProduct
             // 
@@ -350,6 +172,184 @@
             this.buttonInsertProduct.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.buttonInsertProduct.Click += new System.EventHandler(this.buttonInsertProduct_Click);
             // 
+            // textCharacteristics
+            // 
+            this.textCharacteristics.BorderColorFocused = System.Drawing.Color.SeaGreen;
+            this.textCharacteristics.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.textCharacteristics.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
+            this.textCharacteristics.BorderThickness = 1;
+            this.textCharacteristics.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.textCharacteristics.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.textCharacteristics.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.textCharacteristics.isPassword = false;
+            this.textCharacteristics.Location = new System.Drawing.Point(17, 245);
+            this.textCharacteristics.Margin = new System.Windows.Forms.Padding(4);
+            this.textCharacteristics.Name = "textCharacteristics";
+            this.textCharacteristics.Size = new System.Drawing.Size(473, 34);
+            this.textCharacteristics.TabIndex = 5;
+            this.textCharacteristics.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // textDescription
+            // 
+            this.textDescription.BorderColorFocused = System.Drawing.Color.SeaGreen;
+            this.textDescription.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.textDescription.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
+            this.textDescription.BorderThickness = 1;
+            this.textDescription.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.textDescription.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.textDescription.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.textDescription.isPassword = false;
+            this.textDescription.Location = new System.Drawing.Point(17, 46);
+            this.textDescription.Margin = new System.Windows.Forms.Padding(4);
+            this.textDescription.Name = "textDescription";
+            this.textDescription.Size = new System.Drawing.Size(473, 30);
+            this.textDescription.TabIndex = 2;
+            this.textDescription.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // lblProvider
+            // 
+            this.lblProvider.AutoSize = true;
+            this.lblProvider.Depth = 0;
+            this.lblProvider.Font = new System.Drawing.Font("Roboto", 11F);
+            this.lblProvider.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lblProvider.Location = new System.Drawing.Point(13, 293);
+            this.lblProvider.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblProvider.Name = "lblProvider";
+            this.lblProvider.Size = new System.Drawing.Size(85, 19);
+            this.lblProvider.TabIndex = 23;
+            this.lblProvider.Text = "Fornecedor";
+            // 
+            // dropdownProvider
+            // 
+            this.dropdownProvider.BackColor = System.Drawing.Color.Transparent;
+            this.dropdownProvider.BorderRadius = 3;
+            this.dropdownProvider.DisabledColor = System.Drawing.Color.Gray;
+            this.dropdownProvider.ForeColor = System.Drawing.Color.White;
+            this.dropdownProvider.Items = new string[0];
+            this.dropdownProvider.Location = new System.Drawing.Point(17, 315);
+            this.dropdownProvider.Name = "dropdownProvider";
+            this.dropdownProvider.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.dropdownProvider.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.dropdownProvider.selectedIndex = -1;
+            this.dropdownProvider.Size = new System.Drawing.Size(473, 35);
+            this.dropdownProvider.TabIndex = 6;
+            // 
+            // lblCharacteristics
+            // 
+            this.lblCharacteristics.AutoSize = true;
+            this.lblCharacteristics.Depth = 0;
+            this.lblCharacteristics.Font = new System.Drawing.Font("Roboto", 11F);
+            this.lblCharacteristics.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lblCharacteristics.Location = new System.Drawing.Point(13, 221);
+            this.lblCharacteristics.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblCharacteristics.Name = "lblCharacteristics";
+            this.lblCharacteristics.Size = new System.Drawing.Size(115, 19);
+            this.lblCharacteristics.TabIndex = 21;
+            this.lblCharacteristics.Text = "Características ";
+            // 
+            // numericStockQuantity
+            // 
+            this.numericStockQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericStockQuantity.Location = new System.Drawing.Point(17, 188);
+            this.numericStockQuantity.Name = "numericStockQuantity";
+            this.numericStockQuantity.Size = new System.Drawing.Size(217, 26);
+            this.numericStockQuantity.TabIndex = 4;
+            // 
+            // lblStockQuantity
+            // 
+            this.lblStockQuantity.AutoSize = true;
+            this.lblStockQuantity.Depth = 0;
+            this.lblStockQuantity.Font = new System.Drawing.Font("Roboto", 11F);
+            this.lblStockQuantity.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lblStockQuantity.Location = new System.Drawing.Point(13, 166);
+            this.lblStockQuantity.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblStockQuantity.Name = "lblStockQuantity";
+            this.lblStockQuantity.Size = new System.Drawing.Size(168, 19);
+            this.lblStockQuantity.TabIndex = 18;
+            this.lblStockQuantity.Text = "Quantidade no estoque ";
+            // 
+            // dropdownUnit
+            // 
+            this.dropdownUnit.BackColor = System.Drawing.Color.Transparent;
+            this.dropdownUnit.BorderRadius = 3;
+            this.dropdownUnit.DisabledColor = System.Drawing.Color.Gray;
+            this.dropdownUnit.ForeColor = System.Drawing.Color.White;
+            this.dropdownUnit.Items = new string[] {
+        "Unidade",
+        "Caixa",
+        "Dezena",
+        "Pacote"};
+            this.dropdownUnit.Location = new System.Drawing.Point(17, 115);
+            this.dropdownUnit.Name = "dropdownUnit";
+            this.dropdownUnit.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.dropdownUnit.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.dropdownUnit.selectedIndex = 1;
+            this.dropdownUnit.Size = new System.Drawing.Size(217, 34);
+            this.dropdownUnit.TabIndex = 3;
+            // 
+            // lblUnit
+            // 
+            this.lblUnit.AutoSize = true;
+            this.lblUnit.Depth = 0;
+            this.lblUnit.Font = new System.Drawing.Font("Roboto", 11F);
+            this.lblUnit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lblUnit.Location = new System.Drawing.Point(13, 93);
+            this.lblUnit.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblUnit.Name = "lblUnit";
+            this.lblUnit.Size = new System.Drawing.Size(63, 19);
+            this.lblUnit.TabIndex = 16;
+            this.lblUnit.Text = "Unidade";
+            // 
+            // lblDescription
+            // 
+            this.lblDescription.AutoSize = true;
+            this.lblDescription.Depth = 0;
+            this.lblDescription.Font = new System.Drawing.Font("Roboto", 11F);
+            this.lblDescription.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lblDescription.Location = new System.Drawing.Point(13, 23);
+            this.lblDescription.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblDescription.Name = "lblDescription";
+            this.lblDescription.Size = new System.Drawing.Size(77, 19);
+            this.lblDescription.TabIndex = 15;
+            this.lblDescription.Text = "Descrição";
+            // 
+            // productGridView
+            // 
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.productGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.productGridView.BackgroundColor = System.Drawing.Color.Gainsboro;
+            this.productGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.productGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.productGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.productGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.productGridView.DoubleBuffered = true;
+            this.productGridView.EnableHeadersVisualStyles = false;
+            this.productGridView.HeaderBgColor = System.Drawing.Color.SeaGreen;
+            this.productGridView.HeaderForeColor = System.Drawing.Color.SeaGreen;
+            this.productGridView.Location = new System.Drawing.Point(538, 199);
+            this.productGridView.Name = "productGridView";
+            this.productGridView.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.productGridView.Size = new System.Drawing.Size(486, 397);
+            this.productGridView.TabIndex = 15;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = global::ProductManagement.Properties.Resources.ic_search_color;
+            this.pictureBox1.Location = new System.Drawing.Point(975, 134);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(48, 48);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 16;
+            this.pictureBox1.TabStop = false;
+            // 
             // textSearchProduct
             // 
             this.textSearchProduct.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -369,24 +369,24 @@
             this.textSearchProduct.TabIndex = 18;
             this.textSearchProduct.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // ProductProvider
+            // FrmProduct
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1048, 613);
             this.Controls.Add(this.textSearchProduct);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.bunifuCustomDataGrid1);
+            this.Controls.Add(this.productGridView);
             this.Controls.Add(this.bunifuCards1);
             this.Controls.Add(this.materialLabel1);
             this.MaximizeBox = false;
-            this.Name = "ProductProvider";
+            this.Name = "FrmProduct";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastrar Produto";
             this.bunifuCards1.ResumeLayout(false);
             this.bunifuCards1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericStockQuantity)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -406,7 +406,7 @@
         private MaterialSkin.Controls.MaterialLabel lblDescription;
         private Bunifu.Framework.UI.BunifuMetroTextbox textDescription;
         private Bunifu.Framework.UI.BunifuMetroTextbox textCharacteristics;
-        private Bunifu.Framework.UI.BunifuCustomDataGrid bunifuCustomDataGrid1;
+        private Bunifu.Framework.UI.BunifuCustomDataGrid productGridView;
         private Bunifu.Framework.UI.BunifuThinButton2 buttonInsertProduct;
         private Bunifu.Framework.UI.BunifuThinButton2 buttonDeleteProduct;
         private Bunifu.Framework.UI.BunifuThinButton2 buttonEditProduct;

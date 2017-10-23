@@ -12,18 +12,24 @@ using System.Windows.Forms;
 
 namespace ProductManagement
 {
-    public partial class Provider : MaterialForm
+    public partial class FrmProduct : MaterialForm
     {
-        public Provider()
+        public FrmProduct()
         {
             InitializeComponent();
 
-            MaterialSkinManager materialSkinManager = MaterialSkinManager.Instance;
+            MaterialSkinManager materialSkinManager =  MaterialSkinManager.Instance;
             materialSkinManager.AddFormToManage(this);
             materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
 
             // Color Schema
             materialSkinManager.ColorScheme = new ColorScheme(Primary.DeepPurple400, Primary.DeepPurple500, Primary.DeepPurple500, Accent.LightGreen400, TextShade.WHITE);
+
+        }
+
+        private void buttonInsertProduct_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

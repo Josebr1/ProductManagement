@@ -75,14 +75,14 @@ namespace ProductManagement
 
         private void productProviderToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Provider form = new Provider();
+            FrmProvider form = new FrmProvider();
             form.MdiParent = this;
             form.Show();
         }
 
         private void produtosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Product form = new Product();
+            FrmProduct form = new FrmProduct();
             form.MdiParent = this;
             form.Show();
         }
