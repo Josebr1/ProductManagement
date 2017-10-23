@@ -218,15 +218,7 @@ namespace ProductManagement
             }
         }
 
-        private void dataGridViewProvider_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            formatText();
-        }
-
-        private void dataGridViewProvider_KeyUp(object sender, KeyEventArgs e)
-        {
-            formatText();
-        }
+        
 
         private void clearSearch()
         {
@@ -253,6 +245,16 @@ namespace ProductManagement
         private void buttonClear_Click(object sender, EventArgs e)
         {
             clearAll();
+        }
+
+        private void dataGridViewProvider_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            formatText();
+        }
+
+        private void dataGridViewProvider_KeyUp(object sender, KeyEventArgs e)
+        {
+            formatText();
         }
     }
 }

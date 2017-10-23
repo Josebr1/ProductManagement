@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmProvider));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.bunifuCards1 = new Bunifu.Framework.UI.BunifuCards();
             this.txtNameContact = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.lblNameContact = new MaterialSkin.Controls.MaterialLabel();
@@ -42,7 +44,6 @@
             this.lblCNPJ = new MaterialSkin.Controls.MaterialLabel();
             this.lblFantasyName = new MaterialSkin.Controls.MaterialLabel();
             this.lblSocialName = new MaterialSkin.Controls.MaterialLabel();
-            this.dataGridViewProvider = new System.Windows.Forms.DataGridView();
             this.buttonDelete = new Bunifu.Framework.UI.BunifuThinButton2();
             this.buttunUpdate = new Bunifu.Framework.UI.BunifuThinButton2();
             this.buttunInsert = new Bunifu.Framework.UI.BunifuThinButton2();
@@ -63,10 +64,11 @@
             this.txtSearchProvider = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.lblCodProvider = new System.Windows.Forms.Label();
             this.buttonClear = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.dataGridViewProvider = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.bunifuCards1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProvider)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.bunifuCards2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProvider)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuCards1
@@ -258,16 +260,6 @@
             this.lblSocialName.TabIndex = 1;
             this.lblSocialName.Text = "Razão Social";
             // 
-            // dataGridViewProvider
-            // 
-            this.dataGridViewProvider.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewProvider.Location = new System.Drawing.Point(13, 451);
-            this.dataGridViewProvider.Name = "dataGridViewProvider";
-            this.dataGridViewProvider.Size = new System.Drawing.Size(964, 166);
-            this.dataGridViewProvider.TabIndex = 1;
-            this.dataGridViewProvider.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewProvider_CellClick);
-            this.dataGridViewProvider.KeyUp += new System.Windows.Forms.KeyEventHandler(this.dataGridViewProvider_KeyUp);
-            // 
             // buttonDelete
             // 
             this.buttonDelete.ActiveBorderThickness = 1;
@@ -275,7 +267,7 @@
             this.buttonDelete.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(67)))), ((int)(((byte)(54)))));
             this.buttonDelete.ActiveForecolor = System.Drawing.Color.White;
             this.buttonDelete.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(67)))), ((int)(((byte)(54)))));
-            this.buttonDelete.BackColor = System.Drawing.Color.Transparent;
+            this.buttonDelete.BackColor = System.Drawing.SystemColors.Control;
             this.buttonDelete.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonDelete.BackgroundImage")));
             this.buttonDelete.ButtonText = "Deletar";
             this.buttonDelete.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -301,7 +293,7 @@
             this.buttunUpdate.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(152)))), ((int)(((byte)(0)))));
             this.buttunUpdate.ActiveForecolor = System.Drawing.Color.White;
             this.buttunUpdate.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(152)))), ((int)(((byte)(0)))));
-            this.buttunUpdate.BackColor = System.Drawing.Color.Transparent;
+            this.buttunUpdate.BackColor = System.Drawing.SystemColors.Control;
             this.buttunUpdate.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttunUpdate.BackgroundImage")));
             this.buttunUpdate.ButtonText = "Editar";
             this.buttunUpdate.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -327,7 +319,7 @@
             this.buttunInsert.ActiveFillColor = System.Drawing.Color.SeaGreen;
             this.buttunInsert.ActiveForecolor = System.Drawing.Color.White;
             this.buttunInsert.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.buttunInsert.BackColor = System.Drawing.Color.Transparent;
+            this.buttunInsert.BackColor = System.Drawing.SystemColors.Control;
             this.buttunInsert.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttunInsert.BackgroundImage")));
             this.buttunInsert.ButtonText = "Inserir";
             this.buttunInsert.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -612,11 +604,41 @@
             this.buttonClear.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.buttonClear.Click += new System.EventHandler(this.buttonClear_Click);
             // 
+            // dataGridViewProvider
+            // 
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dataGridViewProvider.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridViewProvider.BackgroundColor = System.Drawing.Color.Gainsboro;
+            this.dataGridViewProvider.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridViewProvider.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(175)))), ((int)(((byte)(80)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewProvider.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridViewProvider.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewProvider.DoubleBuffered = true;
+            this.dataGridViewProvider.EnableHeadersVisualStyles = false;
+            this.dataGridViewProvider.GridColor = System.Drawing.SystemColors.ActiveCaption;
+            this.dataGridViewProvider.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(175)))), ((int)(((byte)(80)))));
+            this.dataGridViewProvider.HeaderForeColor = System.Drawing.Color.White;
+            this.dataGridViewProvider.Location = new System.Drawing.Point(12, 451);
+            this.dataGridViewProvider.Name = "dataGridViewProvider";
+            this.dataGridViewProvider.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dataGridViewProvider.Size = new System.Drawing.Size(965, 159);
+            this.dataGridViewProvider.TabIndex = 46;
+            this.dataGridViewProvider.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewProvider_CellClick);
+            this.dataGridViewProvider.KeyUp += new System.Windows.Forms.KeyEventHandler(this.dataGridViewProvider_KeyUp);
+            // 
             // FrmProvider
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(989, 659);
+            this.Controls.Add(this.dataGridViewProvider);
             this.Controls.Add(this.buttonClear);
             this.Controls.Add(this.lblCodProvider);
             this.Controls.Add(this.txtSearchProvider);
@@ -627,7 +649,6 @@
             this.Controls.Add(this.buttonDelete);
             this.Controls.Add(this.buttunUpdate);
             this.Controls.Add(this.buttunInsert);
-            this.Controls.Add(this.dataGridViewProvider);
             this.Controls.Add(this.bunifuCards1);
             this.MaximizeBox = false;
             this.Name = "FrmProvider";
@@ -636,10 +657,10 @@
             this.Load += new System.EventHandler(this.FrmProvider_Load);
             this.bunifuCards1.ResumeLayout(false);
             this.bunifuCards1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProvider)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.bunifuCards2.ResumeLayout(false);
             this.bunifuCards2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProvider)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -648,7 +669,6 @@
         #endregion
 
         private Bunifu.Framework.UI.BunifuCards bunifuCards1;
-        private System.Windows.Forms.DataGridView dataGridViewProvider;
         private Bunifu.Framework.UI.BunifuThinButton2 buttonDelete;
         private Bunifu.Framework.UI.BunifuThinButton2 buttunUpdate;
         private Bunifu.Framework.UI.BunifuThinButton2 buttunInsert;
@@ -681,5 +701,6 @@
         private Bunifu.Framework.UI.BunifuMetroTextbox txtSearchProvider;
         private System.Windows.Forms.Label lblCodProvider;
         private Bunifu.Framework.UI.BunifuThinButton2 buttonClear;
+        private Bunifu.Framework.UI.BunifuCustomDataGrid dataGridViewProvider;
     }
 }
