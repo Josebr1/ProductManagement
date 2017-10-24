@@ -3,13 +3,7 @@ using MaterialSkin;
 using MaterialSkin.Controls;
 using ProductManagement.Package.Utils;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ProductManagement
@@ -83,6 +77,13 @@ namespace ProductManagement
         private void produtosToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FrmProduct form = new FrmProduct();
+            form.MdiParent = this;
+            form.Show();
+        }
+
+        private void fornecedorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmQueryProvider form = new FrmQueryProvider();
             form.MdiParent = this;
             form.Show();
         }

@@ -130,7 +130,7 @@
             this.fornecedorToolStripMenuItem1,
             this.produtosToolStripMenuItem1});
             this.cadastralToolStripMenuItem.Name = "cadastralToolStripMenuItem";
-            this.cadastralToolStripMenuItem.Size = new System.Drawing.Size(146, 26);
+            this.cadastralToolStripMenuItem.Size = new System.Drawing.Size(152, 26);
             this.cadastralToolStripMenuItem.Text = "Cadastral";
             // 
             // fornecedorToolStripMenuItem1
@@ -138,6 +138,7 @@
             this.fornecedorToolStripMenuItem1.Name = "fornecedorToolStripMenuItem1";
             this.fornecedorToolStripMenuItem1.Size = new System.Drawing.Size(159, 26);
             this.fornecedorToolStripMenuItem1.Text = "Fornecedor";
+            this.fornecedorToolStripMenuItem1.Click += new System.EventHandler(this.fornecedorToolStripMenuItem_Click);
             // 
             // produtosToolStripMenuItem1
             // 
@@ -148,7 +149,7 @@
             // analíticasToolStripMenuItem
             // 
             this.analíticasToolStripMenuItem.Name = "analíticasToolStripMenuItem";
-            this.analíticasToolStripMenuItem.Size = new System.Drawing.Size(146, 26);
+            this.analíticasToolStripMenuItem.Size = new System.Drawing.Size(152, 26);
             this.analíticasToolStripMenuItem.Text = "Analíticas";
             // 
             // relatóriosToolStripMenuItem
