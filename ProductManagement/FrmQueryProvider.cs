@@ -154,6 +154,11 @@ namespace ProductManagement
             e.Graphics.DrawString("CNPJ :   " + line.Cells["CNPJ"].Value.ToString(), new System.Drawing.Font("Arial", 10, FontStyle.Bold), Brushes.Black, 50, 200);
 
             e.Graphics.DrawLine(new Pen(Color.DarkBlue, 2), 50, 1100, 800, 1100);
+
+            //imprime o rodapé do relatório 
+            //***************************** 
+            e.Graphics.DrawLine(new Pen(Color.DarkBlue, 1), 50, 1115, 800, 800);
+            e.Graphics.DrawString("Data: " + System.DateTime.Now.ToString("dd/MM/yyyy"), new System.Drawing.Font("Arial", 9, FontStyle.Bold), Brushes.Blue, 50, 800);
         }
 
         private void buttonPrint_Click(object sender, EventArgs e)
