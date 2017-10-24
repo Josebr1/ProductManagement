@@ -59,6 +59,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmQueryProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmQueryProduct.Designer.cs">
+      <DependentUpon>FrmQueryProduct.cs</DependentUpon>
+    </Compile>
     <Compile Include="Package\Dao\ProductDAO.cs" />
     <Compile Include="Package\Dao\ProviderDAO.cs" />
     <Compile Include="Package\Domain\Product.cs" />
@@ -100,6 +106,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmProduct.resx">
       <DependentUpon>FrmProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmQueryProduct.resx">
+      <DependentUpon>FrmQueryProduct.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmQueryProvider.resx">
       <DependentUpon>FrmQueryProvider.cs</DependentUpon>

@@ -34,8 +34,8 @@
             this.produtosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cadastralToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.fornecedorToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.produtosToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.fornecedorQueryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.produtosToolStripMenuItemQuery = new System.Windows.Forms.ToolStripMenuItem();
             this.analíticasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.relatóriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cadastralToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -108,7 +108,7 @@
             this.produtosToolStripMenuItem.Name = "produtosToolStripMenuItem";
             this.produtosToolStripMenuItem.Size = new System.Drawing.Size(159, 26);
             this.produtosToolStripMenuItem.Text = "Produtos";
-            this.produtosToolStripMenuItem.Click += new System.EventHandler(this.produtosToolStripMenuItem_Click);
+            this.produtosToolStripMenuItem.Click += new System.EventHandler(this.produtosToolStripMenuItem_Click_1);
             // 
             // consultaToolStripMenuItem
             // 
@@ -127,24 +127,25 @@
             // cadastralToolStripMenuItem
             // 
             this.cadastralToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fornecedorToolStripMenuItem1,
-            this.produtosToolStripMenuItem1});
+            this.fornecedorQueryToolStripMenuItem,
+            this.produtosToolStripMenuItemQuery});
             this.cadastralToolStripMenuItem.Name = "cadastralToolStripMenuItem";
             this.cadastralToolStripMenuItem.Size = new System.Drawing.Size(152, 26);
             this.cadastralToolStripMenuItem.Text = "Cadastral";
             // 
-            // fornecedorToolStripMenuItem1
+            // fornecedorQueryToolStripMenuItem
             // 
-            this.fornecedorToolStripMenuItem1.Name = "fornecedorToolStripMenuItem1";
-            this.fornecedorToolStripMenuItem1.Size = new System.Drawing.Size(159, 26);
-            this.fornecedorToolStripMenuItem1.Text = "Fornecedor";
-            this.fornecedorToolStripMenuItem1.Click += new System.EventHandler(this.fornecedorToolStripMenuItem_Click);
+            this.fornecedorQueryToolStripMenuItem.Name = "fornecedorQueryToolStripMenuItem";
+            this.fornecedorQueryToolStripMenuItem.Size = new System.Drawing.Size(159, 26);
+            this.fornecedorQueryToolStripMenuItem.Text = "Fornecedor";
+            this.fornecedorQueryToolStripMenuItem.Click += new System.EventHandler(this.fornecedorToolStripMenuItem_Click);
             // 
-            // produtosToolStripMenuItem1
+            // produtosToolStripMenuItemQuery
             // 
-            this.produtosToolStripMenuItem1.Name = "produtosToolStripMenuItem1";
-            this.produtosToolStripMenuItem1.Size = new System.Drawing.Size(159, 26);
-            this.produtosToolStripMenuItem1.Text = "Produtos";
+            this.produtosToolStripMenuItemQuery.Name = "produtosToolStripMenuItemQuery";
+            this.produtosToolStripMenuItemQuery.Size = new System.Drawing.Size(159, 26);
+            this.produtosToolStripMenuItemQuery.Text = "Produtos";
+            this.produtosToolStripMenuItemQuery.Click += new System.EventHandler(this.produtosToolStripMenuItemQuery_Click);
             // 
             // analíticasToolStripMenuItem
             // 
@@ -381,8 +382,8 @@
         private System.Windows.Forms.ToolStripMenuItem produtosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem consultaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cadastralToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem fornecedorToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem produtosToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem fornecedorQueryToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem produtosToolStripMenuItemQuery;
         private System.Windows.Forms.ToolStripMenuItem analíticasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem relatóriosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cadastralToolStripMenuItem1;

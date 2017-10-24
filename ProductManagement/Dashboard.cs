@@ -87,5 +87,19 @@ namespace ProductManagement
             form.MdiParent = this;
             form.Show();
         }
+
+        private void produtosToolStripMenuItemQuery_Click(object sender, EventArgs e)
+        {
+            FrmQueryProduct form = new FrmQueryProduct();
+            form.MdiParent = this;
+            form.Show();
+        }
+
+        private void produtosToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            FrmProduct form = new FrmProduct();
+            form.MdiParent = this;
+            form.Show();
+        }
     }
 }
