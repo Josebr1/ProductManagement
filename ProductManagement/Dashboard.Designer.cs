@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.menuStripDashboard = new System.Windows.Forms.MenuStrip();
             this.cadastroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.productProviderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -56,6 +57,7 @@
             this.dashboardButtonMaximized = new Bunifu.Framework.UI.BunifuImageButton();
             this.dashboardButtonMinimized = new Bunifu.Framework.UI.BunifuImageButton();
             this.panelTopContainerDashboard = new System.Windows.Forms.Panel();
+            this.timer = new System.Windows.Forms.Timer(this.components);
             this.menuStripDashboard.SuspendLayout();
             this.toolStripDashboard.SuspendLayout();
             this.statusStripDashboard.SuspendLayout();
@@ -238,7 +240,7 @@
             this.toolStripButtonExit});
             this.toolStripDashboard.Location = new System.Drawing.Point(250, 0);
             this.toolStripDashboard.Name = "toolStripDashboard";
-            this.toolStripDashboard.Size = new System.Drawing.Size(32, 580);
+            this.toolStripDashboard.Size = new System.Drawing.Size(24, 580);
             this.toolStripDashboard.TabIndex = 2;
             this.toolStripDashboard.Text = "toolStrip1";
             // 
@@ -249,7 +251,7 @@
             this.toolStripButtonInsertProducts.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButtonInsertProducts.Margin = new System.Windows.Forms.Padding(0, 30, 0, 2);
             this.toolStripButtonInsertProducts.Name = "toolStripButtonInsertProducts";
-            this.toolStripButtonInsertProducts.Size = new System.Drawing.Size(29, 20);
+            this.toolStripButtonInsertProducts.Size = new System.Drawing.Size(21, 20);
             this.toolStripButtonInsertProducts.Text = "Cadastrar Produto";
             this.toolStripButtonInsertProducts.Click += new System.EventHandler(this.toolStripButtonInsertProducts_Click);
             // 
@@ -259,7 +261,7 @@
             this.toolStripButtonInsertProductSuppliers.Image = global::ProductManagement.Properties.Resources.ic_store;
             this.toolStripButtonInsertProductSuppliers.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButtonInsertProductSuppliers.Name = "toolStripButtonInsertProductSuppliers";
-            this.toolStripButtonInsertProductSuppliers.Size = new System.Drawing.Size(29, 20);
+            this.toolStripButtonInsertProductSuppliers.Size = new System.Drawing.Size(21, 20);
             this.toolStripButtonInsertProductSuppliers.Text = "Cadastrar Loja";
             this.toolStripButtonInsertProductSuppliers.Click += new System.EventHandler(this.toolStripButtonInsertProductSuppliers_Click);
             // 
@@ -269,7 +271,7 @@
             this.toolStripButtonExit.Image = global::ProductManagement.Properties.Resources.ic_exit1;
             this.toolStripButtonExit.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButtonExit.Name = "toolStripButtonExit";
-            this.toolStripButtonExit.Size = new System.Drawing.Size(29, 20);
+            this.toolStripButtonExit.Size = new System.Drawing.Size(21, 20);
             this.toolStripButtonExit.Text = "Sair";
             this.toolStripButtonExit.Click += new System.EventHandler(this.toolStripButtonExit_Click);
             // 
@@ -279,9 +281,9 @@
             this.toolStripStatusLabelDate,
             this.toolStripStatusLabelHour,
             this.toolStripStatusLabelNameDeveloper});
-            this.statusStripDashboard.Location = new System.Drawing.Point(282, 558);
+            this.statusStripDashboard.Location = new System.Drawing.Point(274, 558);
             this.statusStripDashboard.Name = "statusStripDashboard";
-            this.statusStripDashboard.Size = new System.Drawing.Size(616, 22);
+            this.statusStripDashboard.Size = new System.Drawing.Size(624, 22);
             this.statusStripDashboard.TabIndex = 3;
             this.statusStripDashboard.Text = "statusStrip1";
             // 
@@ -311,7 +313,7 @@
             this.dashboardButtonClose.Dock = System.Windows.Forms.DockStyle.Right;
             this.dashboardButtonClose.Image = global::ProductManagement.Properties.Resources.ic_close;
             this.dashboardButtonClose.ImageActive = global::ProductManagement.Properties.Resources.ic_close_activated;
-            this.dashboardButtonClose.Location = new System.Drawing.Point(580, 0);
+            this.dashboardButtonClose.Location = new System.Drawing.Point(588, 0);
             this.dashboardButtonClose.Name = "dashboardButtonClose";
             this.dashboardButtonClose.Size = new System.Drawing.Size(36, 36);
             this.dashboardButtonClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -327,7 +329,7 @@
             this.dashboardButtonMaximized.Dock = System.Windows.Forms.DockStyle.Right;
             this.dashboardButtonMaximized.Image = global::ProductManagement.Properties.Resources.ic_maximized;
             this.dashboardButtonMaximized.ImageActive = null;
-            this.dashboardButtonMaximized.Location = new System.Drawing.Point(549, 0);
+            this.dashboardButtonMaximized.Location = new System.Drawing.Point(557, 0);
             this.dashboardButtonMaximized.Name = "dashboardButtonMaximized";
             this.dashboardButtonMaximized.Size = new System.Drawing.Size(31, 36);
             this.dashboardButtonMaximized.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -343,7 +345,7 @@
             this.dashboardButtonMinimized.Dock = System.Windows.Forms.DockStyle.Right;
             this.dashboardButtonMinimized.Image = global::ProductManagement.Properties.Resources.ic_minimized;
             this.dashboardButtonMinimized.ImageActive = null;
-            this.dashboardButtonMinimized.Location = new System.Drawing.Point(519, 0);
+            this.dashboardButtonMinimized.Location = new System.Drawing.Point(527, 0);
             this.dashboardButtonMinimized.Name = "dashboardButtonMinimized";
             this.dashboardButtonMinimized.Size = new System.Drawing.Size(30, 36);
             this.dashboardButtonMinimized.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -360,13 +362,17 @@
             this.panelTopContainerDashboard.Controls.Add(this.dashboardButtonClose);
             this.panelTopContainerDashboard.Cursor = System.Windows.Forms.Cursors.SizeAll;
             this.panelTopContainerDashboard.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelTopContainerDashboard.Location = new System.Drawing.Point(282, 0);
+            this.panelTopContainerDashboard.Location = new System.Drawing.Point(274, 0);
             this.panelTopContainerDashboard.Name = "panelTopContainerDashboard";
-            this.panelTopContainerDashboard.Size = new System.Drawing.Size(616, 36);
+            this.panelTopContainerDashboard.Size = new System.Drawing.Size(624, 36);
             this.panelTopContainerDashboard.TabIndex = 4;
             this.panelTopContainerDashboard.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTopContainerDashboard_MouseDown);
             this.panelTopContainerDashboard.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panelTopContainerDashboard_MouseMove);
             this.panelTopContainerDashboard.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panelTopContainerDashboard_MouseUp);
+            // 
+            // timer
+            // 
+            this.timer.Tick += new System.EventHandler(this.timer_Tick);
             // 
             // Dashboard
             // 
@@ -430,6 +436,7 @@
         private System.Windows.Forms.Panel panelTopContainerDashboard;
         private System.Windows.Forms.ToolStripMenuItem produtosReToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem fornecedoresToolStripMenuItem;
+        private System.Windows.Forms.Timer timer;
     }
 }
 
