@@ -65,6 +65,7 @@
             this.lblCodProvider = new System.Windows.Forms.Label();
             this.buttonClear = new Bunifu.Framework.UI.BunifuThinButton2();
             this.dataGridViewProvider = new Bunifu.Framework.UI.BunifuCustomDataGrid();
+            this.lblSocial = new MaterialSkin.Controls.MaterialLabel();
             this.bunifuCards1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.bunifuCards2.SuspendLayout();
@@ -560,10 +561,10 @@
             this.txtSearchProvider.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txtSearchProvider.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtSearchProvider.isPassword = false;
-            this.txtSearchProvider.Location = new System.Drawing.Point(500, 413);
+            this.txtSearchProvider.Location = new System.Drawing.Point(496, 420);
             this.txtSearchProvider.Margin = new System.Windows.Forms.Padding(4);
             this.txtSearchProvider.Name = "txtSearchProvider";
-            this.txtSearchProvider.Size = new System.Drawing.Size(443, 30);
+            this.txtSearchProvider.Size = new System.Drawing.Size(443, 24);
             this.txtSearchProvider.TabIndex = 43;
             this.txtSearchProvider.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtSearchProvider.OnValueChanged += new System.EventHandler(this.txtSearchProvider_OnValueChanged);
@@ -633,11 +634,25 @@
             this.dataGridViewProvider.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewProvider_CellClick);
             this.dataGridViewProvider.KeyUp += new System.Windows.Forms.KeyEventHandler(this.dataGridViewProvider_KeyUp);
             // 
+            // lblSocial
+            // 
+            this.lblSocial.AutoSize = true;
+            this.lblSocial.Depth = 0;
+            this.lblSocial.Font = new System.Drawing.Font("Roboto", 11F);
+            this.lblSocial.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lblSocial.Location = new System.Drawing.Point(496, 397);
+            this.lblSocial.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblSocial.Name = "lblSocial";
+            this.lblSocial.Size = new System.Drawing.Size(111, 19);
+            this.lblSocial.TabIndex = 47;
+            this.lblSocial.Text = "Nome Fantasia";
+            // 
             // FrmProvider
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(989, 659);
+            this.Controls.Add(this.lblSocial);
             this.Controls.Add(this.dataGridViewProvider);
             this.Controls.Add(this.buttonClear);
             this.Controls.Add(this.lblCodProvider);
@@ -653,7 +668,7 @@
             this.MaximizeBox = false;
             this.Name = "FrmProvider";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Provider";
+            this.Text = "Cadastramento Fornecedor";
             this.Load += new System.EventHandler(this.FrmProvider_Load);
             this.bunifuCards1.ResumeLayout(false);
             this.bunifuCards1.PerformLayout();
@@ -702,5 +717,6 @@
         private System.Windows.Forms.Label lblCodProvider;
         private Bunifu.Framework.UI.BunifuThinButton2 buttonClear;
         private Bunifu.Framework.UI.BunifuCustomDataGrid dataGridViewProvider;
+        private MaterialSkin.Controls.MaterialLabel lblSocial;
     }
 }

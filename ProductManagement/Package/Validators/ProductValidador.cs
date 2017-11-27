@@ -14,7 +14,7 @@ namespace ProductManagement.Package.Validators
         {
             RuleFor(product => product.Description).NotNull().NotEqual("").WithMessage("Descrição Invalido. Redigite !!");
             RuleFor(product => product.Unit).NotNull().WithMessage("Unidade Invalido. Redigite !!");
-            RuleFor(product => product.StockQuantity).NotNull().NotEqual(0).WithMessage("Quantidade no estoque Invalido. Redigite !!");
+            RuleFor(product => product.StockQuantity).NotNull().WithMessage("Quantidade no estoque Invalido. Redigite !!");
             RuleFor(product => product.Characteristics).NotNull().NotEqual("").WithMessage("Características Invalido. Redigite !!");
             RuleFor(product => product.CodProvider).NotNull().WithMessage("Fornecedor Invalido. Redigite !!");
         }

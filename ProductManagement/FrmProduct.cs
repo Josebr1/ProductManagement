@@ -235,5 +235,16 @@ namespace ProductManagement
         {
             clearAll();
         }
+
+        private void textSearchProduct_OnValueChanged(object sender, EventArgs e)
+        {
+            OleDbDataReader reader = new ProductDAO().querySQL("SELECT produtos.cod_produto, produtos.descricao, produtos.unidade, produtos.qtde_estoque, produtos.caracteristicas, fornecedores.razao_social  FROM produtos INNER JOIN fornecedores ON produtos.cod_fornecedor = fornecedores.cod_fornecedor WHERE produtos.descricao LIKE '" + textSearchProduct.Text + "%'");
+            if (reader.HasRows == true)
+            {
+                source.DataSource = reader;
+                productGridView.DataSource = source;
+                formatText();
+            }
+        }
     }
 }

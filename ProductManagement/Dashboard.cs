@@ -101,5 +101,64 @@ namespace ProductManagement
             form.MdiParent = this;
             form.Show();
         }
+
+        private void produtosReToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmReProducts form = new FrmReProducts();
+            form.MdiParent = this;
+            form.Show();
+        }
+
+        private void analíticasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmQueryAnalyticalr form = new FrmQueryAnalyticalr();
+            form.MdiParent = this;
+            form.Show();
+        }
+
+        private void fornecedoresToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmReProvider form = new FrmReProvider();
+            form.MdiParent = this;
+            form.Show();
+        }
+
+        private void analiticaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmReAnalytical form = new FrmReAnalytical();
+            form.MdiParent = this;
+            form.Show();
+        }
+
+        private void sobreToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmAbout form = new FrmAbout();
+            form.MdiParent = this;
+            form.Show();
+        }
+
+        private void toolStripButtonInsertProducts_Click(object sender, EventArgs e)
+        {
+            FrmProduct form = new FrmProduct();
+            form.MdiParent = this;
+            form.Show();
+        }
+
+        private void toolStripButtonInsertProductSuppliers_Click(object sender, EventArgs e)
+        {
+            FrmProvider form = new FrmProvider();
+            form.MdiParent = this;
+            form.Show();
+        }
+
+        private void toolStripButtonExit_Click(object sender, EventArgs e)
+        {
+            Environment.Exit(0);
+        }
+
+        private void sairToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Environment.Exit(0);
+        }
     }
 }

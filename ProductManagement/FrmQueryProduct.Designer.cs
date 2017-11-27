@@ -409,7 +409,7 @@
             this.MaximizeBox = false;
             this.Name = "FrmQueryProduct";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FrmQueryProduct";
+            this.Text = "Consulta Produtos";
             this.Load += new System.EventHandler(this.FrmQueryProduct_Load);
             this.bunifuCards1.ResumeLayout(false);
             this.bunifuCards1.PerformLayout();

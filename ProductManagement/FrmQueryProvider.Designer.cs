@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmQueryProvider));
             this.dropdownFiedsProvider = new Bunifu.Framework.UI.BunifuDropdown();
             this.txtSearchProvider = new Bunifu.Framework.UI.BunifuMetroTextbox();
@@ -39,17 +39,17 @@
             this.buttonViewPrint = new Bunifu.Framework.UI.BunifuThinButton2();
             this.buttonSelectValue = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuCards1 = new Bunifu.Framework.UI.BunifuCards();
-            this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
-            this.lblCodeProvider = new MaterialSkin.Controls.MaterialLabel();
-            this.lblSocialName = new MaterialSkin.Controls.MaterialLabel();
-            this.lblFantasyName = new MaterialSkin.Controls.MaterialLabel();
-            this.lblNeighborhood = new MaterialSkin.Controls.MaterialLabel();
-            this.lblCNPJ = new MaterialSkin.Controls.MaterialLabel();
-            this.txtCodeProvider = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.txtSocialName = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.txtFantasyName = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.txtNeighborhood = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.txtCNPJ = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.txtNeighborhood = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.txtFantasyName = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.txtSocialName = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.txtCodeProvider = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.lblCNPJ = new MaterialSkin.Controls.MaterialLabel();
+            this.lblNeighborhood = new MaterialSkin.Controls.MaterialLabel();
+            this.lblFantasyName = new MaterialSkin.Controls.MaterialLabel();
+            this.lblSocialName = new MaterialSkin.Controls.MaterialLabel();
+            this.lblCodeProvider = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             this.printDialogProvider = new System.Windows.Forms.PrintDialog();
             this.printDocumentProvider = new System.Drawing.Printing.PrintDocument();
             this.printPreviewDialogProvider = new System.Windows.Forms.PrintPreviewDialog();
@@ -109,19 +109,19 @@
             // 
             // dataGridViewProvider
             // 
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dataGridViewProvider.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dataGridViewProvider.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridViewProvider.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.dataGridViewProvider.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridViewProvider.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(175)))), ((int)(((byte)(80)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewProvider.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(175)))), ((int)(((byte)(80)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewProvider.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridViewProvider.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewProvider.DoubleBuffered = true;
             this.dataGridViewProvider.EnableHeadersVisualStyles = false;
@@ -241,137 +241,23 @@
             this.bunifuCards1.Size = new System.Drawing.Size(402, 379);
             this.bunifuCards1.TabIndex = 51;
             // 
-            // materialLabel1
+            // txtCNPJ
             // 
-            this.materialLabel1.AutoSize = true;
-            this.materialLabel1.Depth = 0;
-            this.materialLabel1.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel1.Location = new System.Drawing.Point(571, 151);
-            this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel1.Name = "materialLabel1";
-            this.materialLabel1.Size = new System.Drawing.Size(235, 19);
-            this.materialLabel1.TabIndex = 52;
-            this.materialLabel1.Text = "Informações do item selecionado";
-            // 
-            // lblCodeProvider
-            // 
-            this.lblCodeProvider.AutoSize = true;
-            this.lblCodeProvider.Depth = 0;
-            this.lblCodeProvider.Font = new System.Drawing.Font("Roboto", 11F);
-            this.lblCodeProvider.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblCodeProvider.Location = new System.Drawing.Point(19, 35);
-            this.lblCodeProvider.MouseState = MaterialSkin.MouseState.HOVER;
-            this.lblCodeProvider.Name = "lblCodeProvider";
-            this.lblCodeProvider.Size = new System.Drawing.Size(137, 19);
-            this.lblCodeProvider.TabIndex = 1;
-            this.lblCodeProvider.Text = "Código Fornecedor";
-            // 
-            // lblSocialName
-            // 
-            this.lblSocialName.AutoSize = true;
-            this.lblSocialName.Depth = 0;
-            this.lblSocialName.Font = new System.Drawing.Font("Roboto", 11F);
-            this.lblSocialName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblSocialName.Location = new System.Drawing.Point(19, 108);
-            this.lblSocialName.MouseState = MaterialSkin.MouseState.HOVER;
-            this.lblSocialName.Name = "lblSocialName";
-            this.lblSocialName.Size = new System.Drawing.Size(95, 19);
-            this.lblSocialName.TabIndex = 2;
-            this.lblSocialName.Text = "Razão social";
-            // 
-            // lblFantasyName
-            // 
-            this.lblFantasyName.AutoSize = true;
-            this.lblFantasyName.Depth = 0;
-            this.lblFantasyName.Font = new System.Drawing.Font("Roboto", 11F);
-            this.lblFantasyName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblFantasyName.Location = new System.Drawing.Point(19, 175);
-            this.lblFantasyName.MouseState = MaterialSkin.MouseState.HOVER;
-            this.lblFantasyName.Name = "lblFantasyName";
-            this.lblFantasyName.Size = new System.Drawing.Size(108, 19);
-            this.lblFantasyName.TabIndex = 3;
-            this.lblFantasyName.Text = "Nome fantasia";
-            // 
-            // lblNeighborhood
-            // 
-            this.lblNeighborhood.AutoSize = true;
-            this.lblNeighborhood.Depth = 0;
-            this.lblNeighborhood.Font = new System.Drawing.Font("Roboto", 11F);
-            this.lblNeighborhood.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblNeighborhood.Location = new System.Drawing.Point(19, 244);
-            this.lblNeighborhood.MouseState = MaterialSkin.MouseState.HOVER;
-            this.lblNeighborhood.Name = "lblNeighborhood";
-            this.lblNeighborhood.Size = new System.Drawing.Size(49, 19);
-            this.lblNeighborhood.TabIndex = 4;
-            this.lblNeighborhood.Text = "Bairro";
-            // 
-            // lblCNPJ
-            // 
-            this.lblCNPJ.AutoSize = true;
-            this.lblCNPJ.Depth = 0;
-            this.lblCNPJ.Font = new System.Drawing.Font("Roboto", 11F);
-            this.lblCNPJ.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblCNPJ.Location = new System.Drawing.Point(19, 311);
-            this.lblCNPJ.MouseState = MaterialSkin.MouseState.HOVER;
-            this.lblCNPJ.Name = "lblCNPJ";
-            this.lblCNPJ.Size = new System.Drawing.Size(47, 19);
-            this.lblCNPJ.TabIndex = 5;
-            this.lblCNPJ.Text = "CNPJ";
-            // 
-            // txtCodeProvider
-            // 
-            this.txtCodeProvider.BorderColorFocused = System.Drawing.Color.SeaGreen;
-            this.txtCodeProvider.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtCodeProvider.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
-            this.txtCodeProvider.BorderThickness = 1;
-            this.txtCodeProvider.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtCodeProvider.Enabled = false;
-            this.txtCodeProvider.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txtCodeProvider.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtCodeProvider.isPassword = false;
-            this.txtCodeProvider.Location = new System.Drawing.Point(23, 60);
-            this.txtCodeProvider.Margin = new System.Windows.Forms.Padding(4);
-            this.txtCodeProvider.Name = "txtCodeProvider";
-            this.txtCodeProvider.Size = new System.Drawing.Size(352, 30);
-            this.txtCodeProvider.TabIndex = 45;
-            this.txtCodeProvider.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // txtSocialName
-            // 
-            this.txtSocialName.BorderColorFocused = System.Drawing.Color.SeaGreen;
-            this.txtSocialName.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtSocialName.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
-            this.txtSocialName.BorderThickness = 1;
-            this.txtSocialName.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtSocialName.Enabled = false;
-            this.txtSocialName.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txtSocialName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtSocialName.isPassword = false;
-            this.txtSocialName.Location = new System.Drawing.Point(23, 131);
-            this.txtSocialName.Margin = new System.Windows.Forms.Padding(4);
-            this.txtSocialName.Name = "txtSocialName";
-            this.txtSocialName.Size = new System.Drawing.Size(352, 30);
-            this.txtSocialName.TabIndex = 46;
-            this.txtSocialName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // txtFantasyName
-            // 
-            this.txtFantasyName.BorderColorFocused = System.Drawing.Color.SeaGreen;
-            this.txtFantasyName.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtFantasyName.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
-            this.txtFantasyName.BorderThickness = 1;
-            this.txtFantasyName.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtFantasyName.Enabled = false;
-            this.txtFantasyName.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txtFantasyName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtFantasyName.isPassword = false;
-            this.txtFantasyName.Location = new System.Drawing.Point(23, 198);
-            this.txtFantasyName.Margin = new System.Windows.Forms.Padding(4);
-            this.txtFantasyName.Name = "txtFantasyName";
-            this.txtFantasyName.Size = new System.Drawing.Size(352, 30);
-            this.txtFantasyName.TabIndex = 47;
-            this.txtFantasyName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtCNPJ.BorderColorFocused = System.Drawing.Color.SeaGreen;
+            this.txtCNPJ.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtCNPJ.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
+            this.txtCNPJ.BorderThickness = 1;
+            this.txtCNPJ.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtCNPJ.Enabled = false;
+            this.txtCNPJ.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtCNPJ.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtCNPJ.isPassword = false;
+            this.txtCNPJ.Location = new System.Drawing.Point(23, 334);
+            this.txtCNPJ.Margin = new System.Windows.Forms.Padding(4);
+            this.txtCNPJ.Name = "txtCNPJ";
+            this.txtCNPJ.Size = new System.Drawing.Size(352, 30);
+            this.txtCNPJ.TabIndex = 49;
+            this.txtCNPJ.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // txtNeighborhood
             // 
@@ -391,23 +277,137 @@
             this.txtNeighborhood.TabIndex = 48;
             this.txtNeighborhood.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // txtCNPJ
+            // txtFantasyName
             // 
-            this.txtCNPJ.BorderColorFocused = System.Drawing.Color.SeaGreen;
-            this.txtCNPJ.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtCNPJ.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
-            this.txtCNPJ.BorderThickness = 1;
-            this.txtCNPJ.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtCNPJ.Enabled = false;
-            this.txtCNPJ.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txtCNPJ.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtCNPJ.isPassword = false;
-            this.txtCNPJ.Location = new System.Drawing.Point(23, 334);
-            this.txtCNPJ.Margin = new System.Windows.Forms.Padding(4);
-            this.txtCNPJ.Name = "txtCNPJ";
-            this.txtCNPJ.Size = new System.Drawing.Size(352, 30);
-            this.txtCNPJ.TabIndex = 49;
-            this.txtCNPJ.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtFantasyName.BorderColorFocused = System.Drawing.Color.SeaGreen;
+            this.txtFantasyName.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtFantasyName.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
+            this.txtFantasyName.BorderThickness = 1;
+            this.txtFantasyName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtFantasyName.Enabled = false;
+            this.txtFantasyName.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtFantasyName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtFantasyName.isPassword = false;
+            this.txtFantasyName.Location = new System.Drawing.Point(23, 198);
+            this.txtFantasyName.Margin = new System.Windows.Forms.Padding(4);
+            this.txtFantasyName.Name = "txtFantasyName";
+            this.txtFantasyName.Size = new System.Drawing.Size(352, 30);
+            this.txtFantasyName.TabIndex = 47;
+            this.txtFantasyName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // txtSocialName
+            // 
+            this.txtSocialName.BorderColorFocused = System.Drawing.Color.SeaGreen;
+            this.txtSocialName.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtSocialName.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
+            this.txtSocialName.BorderThickness = 1;
+            this.txtSocialName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtSocialName.Enabled = false;
+            this.txtSocialName.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtSocialName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtSocialName.isPassword = false;
+            this.txtSocialName.Location = new System.Drawing.Point(23, 131);
+            this.txtSocialName.Margin = new System.Windows.Forms.Padding(4);
+            this.txtSocialName.Name = "txtSocialName";
+            this.txtSocialName.Size = new System.Drawing.Size(352, 30);
+            this.txtSocialName.TabIndex = 46;
+            this.txtSocialName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // txtCodeProvider
+            // 
+            this.txtCodeProvider.BorderColorFocused = System.Drawing.Color.SeaGreen;
+            this.txtCodeProvider.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtCodeProvider.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
+            this.txtCodeProvider.BorderThickness = 1;
+            this.txtCodeProvider.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtCodeProvider.Enabled = false;
+            this.txtCodeProvider.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtCodeProvider.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtCodeProvider.isPassword = false;
+            this.txtCodeProvider.Location = new System.Drawing.Point(23, 60);
+            this.txtCodeProvider.Margin = new System.Windows.Forms.Padding(4);
+            this.txtCodeProvider.Name = "txtCodeProvider";
+            this.txtCodeProvider.Size = new System.Drawing.Size(352, 30);
+            this.txtCodeProvider.TabIndex = 45;
+            this.txtCodeProvider.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // lblCNPJ
+            // 
+            this.lblCNPJ.AutoSize = true;
+            this.lblCNPJ.Depth = 0;
+            this.lblCNPJ.Font = new System.Drawing.Font("Roboto", 11F);
+            this.lblCNPJ.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lblCNPJ.Location = new System.Drawing.Point(19, 311);
+            this.lblCNPJ.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblCNPJ.Name = "lblCNPJ";
+            this.lblCNPJ.Size = new System.Drawing.Size(47, 19);
+            this.lblCNPJ.TabIndex = 5;
+            this.lblCNPJ.Text = "CNPJ";
+            // 
+            // lblNeighborhood
+            // 
+            this.lblNeighborhood.AutoSize = true;
+            this.lblNeighborhood.Depth = 0;
+            this.lblNeighborhood.Font = new System.Drawing.Font("Roboto", 11F);
+            this.lblNeighborhood.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lblNeighborhood.Location = new System.Drawing.Point(19, 244);
+            this.lblNeighborhood.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblNeighborhood.Name = "lblNeighborhood";
+            this.lblNeighborhood.Size = new System.Drawing.Size(49, 19);
+            this.lblNeighborhood.TabIndex = 4;
+            this.lblNeighborhood.Text = "Bairro";
+            // 
+            // lblFantasyName
+            // 
+            this.lblFantasyName.AutoSize = true;
+            this.lblFantasyName.Depth = 0;
+            this.lblFantasyName.Font = new System.Drawing.Font("Roboto", 11F);
+            this.lblFantasyName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lblFantasyName.Location = new System.Drawing.Point(19, 175);
+            this.lblFantasyName.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblFantasyName.Name = "lblFantasyName";
+            this.lblFantasyName.Size = new System.Drawing.Size(108, 19);
+            this.lblFantasyName.TabIndex = 3;
+            this.lblFantasyName.Text = "Nome fantasia";
+            // 
+            // lblSocialName
+            // 
+            this.lblSocialName.AutoSize = true;
+            this.lblSocialName.Depth = 0;
+            this.lblSocialName.Font = new System.Drawing.Font("Roboto", 11F);
+            this.lblSocialName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lblSocialName.Location = new System.Drawing.Point(19, 108);
+            this.lblSocialName.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblSocialName.Name = "lblSocialName";
+            this.lblSocialName.Size = new System.Drawing.Size(95, 19);
+            this.lblSocialName.TabIndex = 2;
+            this.lblSocialName.Text = "Razão social";
+            // 
+            // lblCodeProvider
+            // 
+            this.lblCodeProvider.AutoSize = true;
+            this.lblCodeProvider.Depth = 0;
+            this.lblCodeProvider.Font = new System.Drawing.Font("Roboto", 11F);
+            this.lblCodeProvider.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lblCodeProvider.Location = new System.Drawing.Point(19, 35);
+            this.lblCodeProvider.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblCodeProvider.Name = "lblCodeProvider";
+            this.lblCodeProvider.Size = new System.Drawing.Size(137, 19);
+            this.lblCodeProvider.TabIndex = 1;
+            this.lblCodeProvider.Text = "Código Fornecedor";
+            // 
+            // materialLabel1
+            // 
+            this.materialLabel1.AutoSize = true;
+            this.materialLabel1.Depth = 0;
+            this.materialLabel1.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel1.Location = new System.Drawing.Point(571, 151);
+            this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel1.Name = "materialLabel1";
+            this.materialLabel1.Size = new System.Drawing.Size(235, 19);
+            this.materialLabel1.TabIndex = 52;
+            this.materialLabel1.Text = "Informações do item selecionado";
             // 
             // printDialogProvider
             // 
@@ -446,7 +446,7 @@
             this.MaximizeBox = false;
             this.Name = "FrmQueryProvider";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "QueryProvider";
+            this.Text = "Consulta Fornecedores";
             this.Load += new System.EventHandler(this.FrmQueryProvider_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProvider)).EndInit();
             this.bunifuCards1.ResumeLayout(false);

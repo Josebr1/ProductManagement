@@ -59,11 +59,41 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAbout.Designer.cs">
+      <DependentUpon>FrmAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmQueryAnalyticalr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmQueryAnalyticalr.Designer.cs">
+      <DependentUpon>FrmQueryAnalyticalr.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmQueryProduct.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmQueryProduct.Designer.cs">
       <DependentUpon>FrmQueryProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReAnalytical.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReAnalytical.Designer.cs">
+      <DependentUpon>FrmReAnalytical.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReProducts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReProducts.Designer.cs">
+      <DependentUpon>FrmReProducts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReProvider.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReProvider.Designer.cs">
+      <DependentUpon>FrmReProvider.cs</DependentUpon>
     </Compile>
     <Compile Include="Package\Dao\ProductDAO.cs" />
     <Compile Include="Package\Dao\ProviderDAO.cs" />
@@ -101,6 +131,12 @@
     <Compile Include="FrmQueryProvider.Designer.cs">
       <DependentUpon>FrmQueryProvider.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="FrmAbout.resx">
+      <DependentUpon>FrmAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmQueryAnalyticalr.resx">
+      <DependentUpon>FrmQueryAnalyticalr.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
@@ -112,6 +148,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmQueryProvider.resx">
       <DependentUpon>FrmQueryProvider.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReAnalytical.resx">
+      <DependentUpon>FrmReAnalytical.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReProducts.resx">
+      <DependentUpon>FrmReProducts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReProvider.resx">
+      <DependentUpon>FrmReProvider.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -187,6 +232,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\ic_search_color.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\github_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\etec.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

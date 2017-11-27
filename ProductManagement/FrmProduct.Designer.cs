@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmProduct));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             this.bunifuCards1 = new Bunifu.Framework.UI.BunifuCards();
             this.dropdownProvider = new System.Windows.Forms.ComboBox();
@@ -264,7 +264,7 @@
             this.buttonDeleteProduct.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(67)))), ((int)(((byte)(54)))));
             this.buttonDeleteProduct.ActiveForecolor = System.Drawing.Color.White;
             this.buttonDeleteProduct.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(67)))), ((int)(((byte)(54)))));
-            this.buttonDeleteProduct.BackColor = System.Drawing.Color.White;
+            this.buttonDeleteProduct.BackColor = System.Drawing.SystemColors.Control;
             this.buttonDeleteProduct.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonDeleteProduct.BackgroundImage")));
             this.buttonDeleteProduct.ButtonText = "Deletar";
             this.buttonDeleteProduct.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -290,7 +290,7 @@
             this.buttonEditProduct.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(152)))), ((int)(((byte)(0)))));
             this.buttonEditProduct.ActiveForecolor = System.Drawing.Color.White;
             this.buttonEditProduct.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(152)))), ((int)(((byte)(0)))));
-            this.buttonEditProduct.BackColor = System.Drawing.Color.White;
+            this.buttonEditProduct.BackColor = System.Drawing.SystemColors.Control;
             this.buttonEditProduct.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonEditProduct.BackgroundImage")));
             this.buttonEditProduct.ButtonText = "Editar";
             this.buttonEditProduct.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -316,7 +316,7 @@
             this.buttonInsertProduct.ActiveFillColor = System.Drawing.Color.SeaGreen;
             this.buttonInsertProduct.ActiveForecolor = System.Drawing.Color.White;
             this.buttonInsertProduct.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.buttonInsertProduct.BackColor = System.Drawing.Color.White;
+            this.buttonInsertProduct.BackColor = System.Drawing.SystemColors.Control;
             this.buttonInsertProduct.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonInsertProduct.BackgroundImage")));
             this.buttonInsertProduct.ButtonText = "Inserir";
             this.buttonInsertProduct.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -338,19 +338,19 @@
             // 
             // productGridView
             // 
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.productGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.productGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.productGridView.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.productGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.productGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(175)))), ((int)(((byte)(80)))));
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.productGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(175)))), ((int)(((byte)(80)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.productGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.productGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.productGridView.DoubleBuffered = true;
             this.productGridView.EnableHeadersVisualStyles = false;
@@ -394,6 +394,7 @@
             this.textSearchProduct.Size = new System.Drawing.Size(553, 33);
             this.textSearchProduct.TabIndex = 18;
             this.textSearchProduct.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.textSearchProduct.OnValueChanged += new System.EventHandler(this.textSearchProduct_OnValueChanged);
             // 
             // lblCodProduct
             // 
@@ -422,7 +423,7 @@
             this.MaximizeBox = false;
             this.Name = "FrmProduct";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Cadastrar Produto";
+            this.Text = "Cadastramento Produto";
             this.Load += new System.EventHandler(this.FrmProduct_Load);
             this.bunifuCards1.ResumeLayout(false);
             this.bunifuCards1.PerformLayout();

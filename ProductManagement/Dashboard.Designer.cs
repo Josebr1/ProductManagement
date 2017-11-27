@@ -39,6 +39,8 @@
             this.analíticasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.relatóriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cadastralToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.produtosReToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fornecedoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.analíticaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sobreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -130,7 +132,7 @@
             this.fornecedorQueryToolStripMenuItem,
             this.produtosToolStripMenuItemQuery});
             this.cadastralToolStripMenuItem.Name = "cadastralToolStripMenuItem";
-            this.cadastralToolStripMenuItem.Size = new System.Drawing.Size(152, 26);
+            this.cadastralToolStripMenuItem.Size = new System.Drawing.Size(146, 26);
             this.cadastralToolStripMenuItem.Text = "Cadastral";
             // 
             // fornecedorQueryToolStripMenuItem
@@ -150,8 +152,9 @@
             // analíticasToolStripMenuItem
             // 
             this.analíticasToolStripMenuItem.Name = "analíticasToolStripMenuItem";
-            this.analíticasToolStripMenuItem.Size = new System.Drawing.Size(152, 26);
+            this.analíticasToolStripMenuItem.Size = new System.Drawing.Size(146, 26);
             this.analíticasToolStripMenuItem.Text = "Analíticas";
+            this.analíticasToolStripMenuItem.Click += new System.EventHandler(this.analíticasToolStripMenuItem_Click);
             // 
             // relatóriosToolStripMenuItem
             // 
@@ -169,15 +172,33 @@
             // 
             // cadastralToolStripMenuItem1
             // 
+            this.cadastralToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.produtosReToolStripMenuItem,
+            this.fornecedoresToolStripMenuItem});
             this.cadastralToolStripMenuItem1.Name = "cadastralToolStripMenuItem1";
             this.cadastralToolStripMenuItem1.Size = new System.Drawing.Size(145, 26);
             this.cadastralToolStripMenuItem1.Text = "Cadastral";
+            // 
+            // produtosReToolStripMenuItem
+            // 
+            this.produtosReToolStripMenuItem.Name = "produtosReToolStripMenuItem";
+            this.produtosReToolStripMenuItem.Size = new System.Drawing.Size(174, 26);
+            this.produtosReToolStripMenuItem.Text = "Produtos";
+            this.produtosReToolStripMenuItem.Click += new System.EventHandler(this.produtosReToolStripMenuItem_Click);
+            // 
+            // fornecedoresToolStripMenuItem
+            // 
+            this.fornecedoresToolStripMenuItem.Name = "fornecedoresToolStripMenuItem";
+            this.fornecedoresToolStripMenuItem.Size = new System.Drawing.Size(174, 26);
+            this.fornecedoresToolStripMenuItem.Text = "Fornecedores";
+            this.fornecedoresToolStripMenuItem.Click += new System.EventHandler(this.fornecedoresToolStripMenuItem_Click);
             // 
             // analíticaToolStripMenuItem
             // 
             this.analíticaToolStripMenuItem.Name = "analíticaToolStripMenuItem";
             this.analíticaToolStripMenuItem.Size = new System.Drawing.Size(145, 26);
             this.analíticaToolStripMenuItem.Text = "Analítica";
+            this.analíticaToolStripMenuItem.Click += new System.EventHandler(this.analiticaToolStripMenuItem_Click);
             // 
             // sairToolStripMenuItem
             // 
@@ -192,6 +213,7 @@
             this.sairToolStripMenuItem.Padding = new System.Windows.Forms.Padding(64, 8, 64, 8);
             this.sairToolStripMenuItem.Size = new System.Drawing.Size(221, 41);
             this.sairToolStripMenuItem.Text = "Sair";
+            this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
             // 
             // sobreToolStripMenuItem
             // 
@@ -203,6 +225,7 @@
             this.sobreToolStripMenuItem.Padding = new System.Windows.Forms.Padding(64, 8, 64, 8);
             this.sobreToolStripMenuItem.Size = new System.Drawing.Size(221, 41);
             this.sobreToolStripMenuItem.Text = "Sobre";
+            this.sobreToolStripMenuItem.Click += new System.EventHandler(this.sobreToolStripMenuItem_Click);
             // 
             // toolStripDashboard
             // 
@@ -215,7 +238,7 @@
             this.toolStripButtonExit});
             this.toolStripDashboard.Location = new System.Drawing.Point(250, 0);
             this.toolStripDashboard.Name = "toolStripDashboard";
-            this.toolStripDashboard.Size = new System.Drawing.Size(24, 580);
+            this.toolStripDashboard.Size = new System.Drawing.Size(32, 580);
             this.toolStripDashboard.TabIndex = 2;
             this.toolStripDashboard.Text = "toolStrip1";
             // 
@@ -226,8 +249,9 @@
             this.toolStripButtonInsertProducts.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButtonInsertProducts.Margin = new System.Windows.Forms.Padding(0, 30, 0, 2);
             this.toolStripButtonInsertProducts.Name = "toolStripButtonInsertProducts";
-            this.toolStripButtonInsertProducts.Size = new System.Drawing.Size(21, 20);
-            this.toolStripButtonInsertProducts.Text = "toolStripButton1";
+            this.toolStripButtonInsertProducts.Size = new System.Drawing.Size(29, 20);
+            this.toolStripButtonInsertProducts.Text = "Cadastrar Produto";
+            this.toolStripButtonInsertProducts.Click += new System.EventHandler(this.toolStripButtonInsertProducts_Click);
             // 
             // toolStripButtonInsertProductSuppliers
             // 
@@ -235,8 +259,9 @@
             this.toolStripButtonInsertProductSuppliers.Image = global::ProductManagement.Properties.Resources.ic_store;
             this.toolStripButtonInsertProductSuppliers.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButtonInsertProductSuppliers.Name = "toolStripButtonInsertProductSuppliers";
-            this.toolStripButtonInsertProductSuppliers.Size = new System.Drawing.Size(21, 20);
-            this.toolStripButtonInsertProductSuppliers.Text = "toolStripButton2";
+            this.toolStripButtonInsertProductSuppliers.Size = new System.Drawing.Size(29, 20);
+            this.toolStripButtonInsertProductSuppliers.Text = "Cadastrar Loja";
+            this.toolStripButtonInsertProductSuppliers.Click += new System.EventHandler(this.toolStripButtonInsertProductSuppliers_Click);
             // 
             // toolStripButtonExit
             // 
@@ -244,8 +269,9 @@
             this.toolStripButtonExit.Image = global::ProductManagement.Properties.Resources.ic_exit1;
             this.toolStripButtonExit.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButtonExit.Name = "toolStripButtonExit";
-            this.toolStripButtonExit.Size = new System.Drawing.Size(21, 20);
-            this.toolStripButtonExit.Text = "toolStripButton3";
+            this.toolStripButtonExit.Size = new System.Drawing.Size(29, 20);
+            this.toolStripButtonExit.Text = "Sair";
+            this.toolStripButtonExit.Click += new System.EventHandler(this.toolStripButtonExit_Click);
             // 
             // statusStripDashboard
             // 
@@ -253,9 +279,9 @@
             this.toolStripStatusLabelDate,
             this.toolStripStatusLabelHour,
             this.toolStripStatusLabelNameDeveloper});
-            this.statusStripDashboard.Location = new System.Drawing.Point(274, 558);
+            this.statusStripDashboard.Location = new System.Drawing.Point(282, 558);
             this.statusStripDashboard.Name = "statusStripDashboard";
-            this.statusStripDashboard.Size = new System.Drawing.Size(624, 22);
+            this.statusStripDashboard.Size = new System.Drawing.Size(616, 22);
             this.statusStripDashboard.TabIndex = 3;
             this.statusStripDashboard.Text = "statusStrip1";
             // 
@@ -285,7 +311,7 @@
             this.dashboardButtonClose.Dock = System.Windows.Forms.DockStyle.Right;
             this.dashboardButtonClose.Image = global::ProductManagement.Properties.Resources.ic_close;
             this.dashboardButtonClose.ImageActive = global::ProductManagement.Properties.Resources.ic_close_activated;
-            this.dashboardButtonClose.Location = new System.Drawing.Point(588, 0);
+            this.dashboardButtonClose.Location = new System.Drawing.Point(580, 0);
             this.dashboardButtonClose.Name = "dashboardButtonClose";
             this.dashboardButtonClose.Size = new System.Drawing.Size(36, 36);
             this.dashboardButtonClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -301,7 +327,7 @@
             this.dashboardButtonMaximized.Dock = System.Windows.Forms.DockStyle.Right;
             this.dashboardButtonMaximized.Image = global::ProductManagement.Properties.Resources.ic_maximized;
             this.dashboardButtonMaximized.ImageActive = null;
-            this.dashboardButtonMaximized.Location = new System.Drawing.Point(557, 0);
+            this.dashboardButtonMaximized.Location = new System.Drawing.Point(549, 0);
             this.dashboardButtonMaximized.Name = "dashboardButtonMaximized";
             this.dashboardButtonMaximized.Size = new System.Drawing.Size(31, 36);
             this.dashboardButtonMaximized.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -317,7 +343,7 @@
             this.dashboardButtonMinimized.Dock = System.Windows.Forms.DockStyle.Right;
             this.dashboardButtonMinimized.Image = global::ProductManagement.Properties.Resources.ic_minimized;
             this.dashboardButtonMinimized.ImageActive = null;
-            this.dashboardButtonMinimized.Location = new System.Drawing.Point(527, 0);
+            this.dashboardButtonMinimized.Location = new System.Drawing.Point(519, 0);
             this.dashboardButtonMinimized.Name = "dashboardButtonMinimized";
             this.dashboardButtonMinimized.Size = new System.Drawing.Size(30, 36);
             this.dashboardButtonMinimized.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -334,9 +360,9 @@
             this.panelTopContainerDashboard.Controls.Add(this.dashboardButtonClose);
             this.panelTopContainerDashboard.Cursor = System.Windows.Forms.Cursors.SizeAll;
             this.panelTopContainerDashboard.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelTopContainerDashboard.Location = new System.Drawing.Point(274, 0);
+            this.panelTopContainerDashboard.Location = new System.Drawing.Point(282, 0);
             this.panelTopContainerDashboard.Name = "panelTopContainerDashboard";
-            this.panelTopContainerDashboard.Size = new System.Drawing.Size(624, 36);
+            this.panelTopContainerDashboard.Size = new System.Drawing.Size(616, 36);
             this.panelTopContainerDashboard.TabIndex = 4;
             this.panelTopContainerDashboard.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTopContainerDashboard_MouseDown);
             this.panelTopContainerDashboard.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panelTopContainerDashboard_MouseMove);
@@ -402,6 +428,8 @@
         private Bunifu.Framework.UI.BunifuImageButton dashboardButtonMaximized;
         private Bunifu.Framework.UI.BunifuImageButton dashboardButtonMinimized;
         private System.Windows.Forms.Panel panelTopContainerDashboard;
+        private System.Windows.Forms.ToolStripMenuItem produtosReToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem fornecedoresToolStripMenuItem;
     }
 }
 
