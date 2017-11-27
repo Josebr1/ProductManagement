@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ProductManagement
 {
-    public partial class Form1 : Form
+    public partial class FrmAbout : Form
     {
-        public Form1()
+        public FrmAbout()
         {
             InitializeComponent();
         }
