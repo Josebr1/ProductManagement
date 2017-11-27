@@ -2,14 +2,8 @@
 using MaterialSkin.Controls;
 using ProductManagement.Package.dao;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Data.OleDb;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ProductManagement
@@ -80,14 +74,14 @@ namespace ProductManagement
 
             line = 100;
 
-            e.Graphics.DrawString("Codigo", new System.Drawing.Font("Arial", 10, FontStyle.Bold), Brushes.Black, 10, line);
-            e.Graphics.DrawString("Razao Social", new System.Drawing.Font("Arial", 10, FontStyle.Bold), Brushes.Black, 65, line);
-            e.Graphics.DrawString("Nome Fantasia", new System.Drawing.Font("Arial", 10, FontStyle.Bold), Brushes.Black, 300, line);
+            e.Graphics.DrawString("CÓDIGO", new System.Drawing.Font("Arial", 10, FontStyle.Bold), Brushes.Black, 10, line);
+            e.Graphics.DrawString("RAZÃO SOCIAL", new System.Drawing.Font("Arial", 10, FontStyle.Bold), Brushes.Black, 65, line);
+            e.Graphics.DrawString("NOME FANTASIA", new System.Drawing.Font("Arial", 10, FontStyle.Bold), Brushes.Black, 300, line);
             e.Graphics.DrawString("CNPJ ", new System.Drawing.Font("Arial", 10, FontStyle.Bold), Brushes.Black, 420, line);
-            e.Graphics.DrawString("Telefone ", new System.Drawing.Font("Arial", 10, FontStyle.Bold), Brushes.Black, 550, line);
-            e.Graphics.DrawString("Nome do Contato ", new System.Drawing.Font("Arial", 10, FontStyle.Bold), Brushes.Black, 650, line);
-            e.Graphics.DrawString("Email  ", new System.Drawing.Font("Arial", 10, FontStyle.Bold), Brushes.Black, 780, line);
-            e.Graphics.DrawString("Site ", new System.Drawing.Font("Arial", 10, FontStyle.Bold), Brushes.Black, 940, line);
+            e.Graphics.DrawString("TELEFONE ", new System.Drawing.Font("Arial", 10, FontStyle.Bold), Brushes.Black, 550, line);
+            e.Graphics.DrawString("NOME DO CONTATO ", new System.Drawing.Font("Arial", 10, FontStyle.Bold), Brushes.Black, 650, line);
+            e.Graphics.DrawString("EMAIL  ", new System.Drawing.Font("Arial", 10, FontStyle.Bold), Brushes.Black, 780, line);
+            e.Graphics.DrawString("SITE ", new System.Drawing.Font("Arial", 10, FontStyle.Bold), Brushes.Black, 940, line);
 
             line = 130;
 

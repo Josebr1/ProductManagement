@@ -104,14 +104,14 @@ namespace ProductManagement
 
                     e.Graphics.DrawLine(new Pen(Color.DarkBlue, 2), 50, line, 800, line);
 
-                    e.Graphics.DrawString("Nome Fantasia: " + provider, new System.Drawing.Font("Arial", 11, FontStyle.Bold), Brushes.Black, 50, line + 20);
+                    e.Graphics.DrawString("NOME FANTASIA: " + provider, new System.Drawing.Font("Arial", 11, FontStyle.Bold), Brushes.Black, 50, line + 20);
 
                     e.Graphics.DrawLine(new Pen(Color.DarkBlue, 2), 50, line + 50, 800, line + 50);
 
-                    e.Graphics.DrawString("Descrição", new System.Drawing.Font("Arial", 10, FontStyle.Bold), Brushes.Black, 50, line + 65);
-                    e.Graphics.DrawString("UN", new System.Drawing.Font("Arial", 10, FontStyle.Bold), Brushes.Black, 280, line + 65);
-                    e.Graphics.DrawString("Qtde", new System.Drawing.Font("Arial", 10, FontStyle.Bold), Brushes.Black, 360, line + 65);
-                    e.Graphics.DrawString("Caracteristica", new System.Drawing.Font("Arial", 10, FontStyle.Bold), Brushes.Black, 470, line + 65);
+                    e.Graphics.DrawString("DESCRIÇÃO", new System.Drawing.Font("Arial", 10, FontStyle.Bold), Brushes.Black, 50, line + 65);
+                    e.Graphics.DrawString("UNIDADE", new System.Drawing.Font("Arial", 10, FontStyle.Bold), Brushes.Black, 280, line + 65);
+                    e.Graphics.DrawString("QTDE", new System.Drawing.Font("Arial", 10, FontStyle.Bold), Brushes.Black, 360, line + 65);
+                    e.Graphics.DrawString("CARACTERÍSTICA", new System.Drawing.Font("Arial", 10, FontStyle.Bold), Brushes.Black, 470, line + 65);
 
                     do
                     {

@@ -43,12 +43,12 @@
             // 
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel1.Location = new System.Drawing.Point(145, 386);
+            this.linkLabel1.Location = new System.Drawing.Point(59, 386);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(222, 20);
+            this.linkLabel1.Size = new System.Drawing.Size(393, 20);
             this.linkLabel1.TabIndex = 1;
             this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "https://github.com/Josebr1";
+            this.linkLabel1.Text = "https://github.com/Josebr1/ProductManagement";
             // 
             // pictureBox2
             // 

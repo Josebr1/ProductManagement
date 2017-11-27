@@ -19,6 +19,9 @@ namespace ProductManagement
         {
             InitializeComponent();
             menuStripDashboard.Renderer = new MenuStripRenderer();
+
+            toolStripStatusLabelDate.Text = "Data :" + DateTime.Now.ToString("dd/MM/yyyy");
+            timer.Interval = 1000; timer.Enabled = true;
         }
 
         private void panelTopContainerDashboard_MouseMove(object sender, MouseEventArgs e)
@@ -159,6 +162,11 @@ namespace ProductManagement
         private void sairToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Environment.Exit(0);
+        }
+
+        private void timer_Tick(object sender, EventArgs e)
+        {
+            toolStripStatusLabelHour.Text = "Hora :" + DateTime.Now.ToString("HH:mm:ss");
         }
     }
 }

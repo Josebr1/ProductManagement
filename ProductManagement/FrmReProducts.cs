@@ -2,14 +2,8 @@
 using MaterialSkin.Controls;
 using ProductManagement.Package.Dao;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Data.OleDb;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ProductManagement
@@ -85,14 +79,12 @@ namespace ProductManagement
 
             line = 100;
 
-            // cabeçalho de colunas
-            // cabeçalho de colunas
-            e.Graphics.DrawString("Codigo", new System.Drawing.Font("Arial", 10, FontStyle.Bold), Brushes.Black, 10, line);
-            e.Graphics.DrawString("Descrição", new System.Drawing.Font("Arial", 10, FontStyle.Bold), Brushes.Black, 65, line);
-            e.Graphics.DrawString("Unidade", new System.Drawing.Font("Arial", 10, FontStyle.Bold), Brushes.Black, 280, line);
-            e.Graphics.DrawString("QTDE Estoque ", new System.Drawing.Font("Arial", 10, FontStyle.Bold), Brushes.Black, 380, line);
-            e.Graphics.DrawString("Caracteristica ", new System.Drawing.Font("Arial", 10, FontStyle.Bold), Brushes.Black, 510, line);
-            e.Graphics.DrawString("Fornecedor ", new System.Drawing.Font("Arial", 10, FontStyle.Bold), Brushes.Black, 620, line);
+            e.Graphics.DrawString("CÓDIGO", new System.Drawing.Font("Arial", 10, FontStyle.Bold), Brushes.Black, 10, line);
+            e.Graphics.DrawString("DESCRIÇÃO", new System.Drawing.Font("Arial", 10, FontStyle.Bold), Brushes.Black, 65, line);
+            e.Graphics.DrawString("UNIDADE", new System.Drawing.Font("Arial", 10, FontStyle.Bold), Brushes.Black, 280, line);
+            e.Graphics.DrawString("QTDE ESTOQUE ", new System.Drawing.Font("Arial", 10, FontStyle.Bold), Brushes.Black, 380, line);
+            e.Graphics.DrawString("CARACTERÍSTICA ", new System.Drawing.Font("Arial", 10, FontStyle.Bold), Brushes.Black, 510, line);
+            e.Graphics.DrawString("FORNECEDOR", new System.Drawing.Font("Arial", 10, FontStyle.Bold), Brushes.Black, 620, line);
 
 
             line = 130;
@@ -109,13 +101,13 @@ namespace ProductManagement
                 e.Graphics.DrawString(reg_grid.Cells["Caracteristicas"].Value.ToString(), new System.Drawing.Font("Arial", 10, FontStyle.Regular), Brushes.Black, 520, line);
                 e.Graphics.DrawString(reg_grid.Cells["Nome_Fantasia"].Value.ToString(), new System.Drawing.Font("Arial", 10, FontStyle.Regular), Brushes.Black, 620, line);
               
-                source.MoveNext(); // movendo para o próximo registro
+                source.MoveNext(); 
 
-                reg_grid = dataGridViewProduct.CurrentRow;  // atualizando a linha da grid para impressão
+                reg_grid = dataGridViewProduct.CurrentRow; 
 
-                registro += 1;   // incrementando a variável contadora de registros
+                registro += 1; 
 
-                line += 20; // incrementando a variável para pular linha
+                line += 20;
             }
 
             //***************************** 
@@ -126,9 +118,8 @@ namespace ProductManagement
             e.Graphics.DrawString("Data: " + System.DateTime.Now.ToString("dd/MM/yyyy"), new System.Drawing.Font("Arial", 9, FontStyle.Bold), Brushes.Blue, 50, 1120);
             e.Graphics.DrawString("Pág: " + pag.ToString(), new System.Drawing.Font("Arial", 9, FontStyle.Bold), Brushes.Blue, 700, 1120);
 
-            pag += 1;  // reajustando contadores de pag
+            pag += 1; 
 
-            // trocando de página
             if ((pag > 1) & (registro < end))
             {
                 e.HasMorePages = true;
@@ -142,8 +133,6 @@ namespace ProductManagement
                 registro = 0;
                 line = 0;
             }
-            // Enquanto e.HasMorePages==true toda programação dentro do “PrintDocument” será reiniciada. 
-            // Quando e.HasMorePages==false a programação do “PrintDocument” será encerrada.  
         }
     }
 }
